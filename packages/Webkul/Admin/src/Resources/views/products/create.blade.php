@@ -31,14 +31,9 @@
                         {!! view_render_event('admin.products.create.save_button.before') !!}
 
                         <!-- Create button for Product -->
-                        @if (bouncer()->hasPermission('settings.user.groups.create'))
-                            <button
-                                type="submit"
-                                class="primary-button"
-                            >
-                                @lang('admin::app.products.create.save-btn')
-                            </button>
-                        @endif
+                        <button type="submit" class="primary-button">
+                            @lang('admin::app.products.create.save-btn')
+                        </button>
 
                         {!! view_render_event('admin.products.create.save_button.after') !!}
                     </div>
