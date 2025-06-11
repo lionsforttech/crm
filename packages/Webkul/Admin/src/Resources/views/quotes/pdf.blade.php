@@ -158,12 +158,16 @@
             }
         </style>
     </head>
-
     <body dir="{{ $locale }}">
         <div class="page">
             <!-- Header -->
-            <div class="page-header">
-                <b>@lang('admin::app.quotes.index.pdf.title')</b>
+            <div class="page-header" style="padding: 26px;">
+                <h3 align="left" style="color: #222;">Lions Fort</h3>
+                <div align="left">
+                    <p style="font-size: 10px; color: #555;">Office No. 103, Second Floor, Talary Bayan Building, Opposite of Dentist Hospital,</p>
+                    <p style="font-size: 10px; color: #555;">Muzafarai Street,</p>
+                    <p style="font-size: 10px; color: #555;">Erbil</p>
+                </div>
             </div>
 
             <div class="page-content">
