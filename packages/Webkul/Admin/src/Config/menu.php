@@ -103,7 +103,7 @@ return [
      * Contacts [Person].
      */
     [
-        'key'        => 'Persons',
+        'key'        => 'persons',
         'name'       => 'admin::app.layouts.persons',
         'route'      => 'admin.contacts.persons.index',
         'sort'       => 7,
@@ -114,7 +114,7 @@ return [
      * Contacts [Organizations].
      */
     [
-        'key'        => 'Organizations',
+        'key'        => 'organizations',
         'name'       => 'admin::app.layouts.organizations',
         'route'      => 'admin.contacts.organizations.index',
         'sort'       => 8,
