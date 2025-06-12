@@ -183,48 +183,48 @@ return [
 
                 'empty-placeholders' => [
                     'all' => [
-                        'title'       => 'Không có hoạt động nào',
-                        'description' => 'Không có hoạt động nào cho mục này. Bạn có thể thêm hoạt động bằng cách nhấp vào nút bên trái.',
+                        'title'       => 'Không tìm thấy hoạt động nào',
+                        'description' => 'Không có hoạt động nào được tìm thấy. Bạn có thể thêm hoạt động bằng cách nhấn nút Hoạt động ở bảng bên trái.',
                     ],
 
                     'planned' => [
-                        'title'       => 'Không có hoạt động đã lên kế hoạch nào',
-                        'description' => 'Không có hoạt động đã lên kế hoạch cho mục này. Bạn có thể thêm hoạt động bằng cách nhấp vào nút bên trái.',
+                        'title'       => 'Không tìm thấy hoạt động đã lên kế hoạch',
+                        'description' => 'Không có hoạt động đã lên kế hoạch nào được tìm thấy. Thêm hoạt động bằng cách nhấn nút Hoạt động ở bảng bên trái.',
                     ],
 
                     'notes' => [
-                        'title'       => 'Không có ghi chú nào',
-                        'description' => 'Không có ghi chú cho mục này. Bạn có thể thêm ghi chú bằng cách nhấp vào nút bên trái.',
+                        'title'       => 'Không tìm thấy ghi chú',
+                        'description' => 'Không có ghi chú nào được tìm thấy. Thêm ghi chú bằng cách nhấn nút Ghi chú ở bảng bên trái.',
                     ],
 
                     'calls' => [
-                        'title'       => 'Không có cuộc gọi nào',
-                        'description' => 'Không có ghi chú cho mục này. Bạn có thể thêm ghi chú bằng cách nhấp vào nút bên trái.',
+                        'title'       => 'Không tìm thấy cuộc gọi',
+                        'description' => 'Không có cuộc gọi nào được tìm thấy. Thêm cuộc gọi bằng cách nhấn nút Hoạt động và chọn loại Cuộc gọi.',
                     ],
 
                     'meetings' => [
-                        'title'       => 'Không có cuộc họp nào',
-                        'description' => 'Không có cuộc họp cho mục này. Bạn có thể thêm cuộc họp bằng cách nhấp vào nút bên trái.',
+                        'title'       => 'Không tìm thấy cuộc họp',
+                        'description' => 'Không có cuộc họp nào được tìm thấy. Thêm cuộc họp bằng cách nhấn nút Hoạt động và chọn loại Cuộc họp.',
                     ],
 
                     'lunches' => [
-                        'title'       => 'Không có bữa trưa nào',
-                        'description' => 'Không có bữa trưa cho mục này. Bạn có thể thêm bữa trưa bằng cách nhấp vào nút bên trái.',
+                        'title'       => 'Không tìm thấy buổi ăn trưa',
+                        'description' => 'Không có buổi ăn trưa nào được tìm thấy. Thêm ăn trưa bằng cách nhấn nút Hoạt động và chọn loại Ăn trưa.',
                     ],
 
                     'files' => [
-                        'title'       => 'Không có tệp tin nào',
-                        'description' => 'Không có tệp nào cho mục này. Bạn có thể thêm tệp bằng cách nhấp vào nút bên trái.',
+                        'title'       => 'Không tìm thấy tệp',
+                        'description' => 'Không có tệp nào được tìm thấy. Thêm tệp bằng cách nhấn nút Tệp ở bảng bên trái.',
                     ],
 
                     'emails' => [
-                        'title'       => 'Không có email nào',
-                        'description' => 'Không có email nào cho mục này. Bạn có thể thêm email bằng cách nhấp vào nút bên trái.',
+                        'title'       => 'Không tìm thấy email',
+                        'description' => 'Không có email nào được tìm thấy. Thêm email bằng cách nhấn nút Thư ở bảng bên trái.',
                     ],
 
                     'system' => [
-                        'title'       => 'Không có nhật ký thay đổi nào',
-                        'description' => 'Không có nhật ký thay đổi nào cho mục này.',
+                        'title'       => 'Không tìm thấy nhật ký thay đổi',
+                        'description' => 'Không có nhật ký thay đổi nào được tìm thấy.',
                     ],
                 ],
             ],
@@ -440,7 +440,6 @@ return [
                 'sales-person'   => 'Nhân viên bán hàng',
                 'expired-at'     => 'Hết hạn vào',
                 'created-at'     => 'Tạo vào',
-                'expired-quotes' => 'Báo giá hết hạn',
                 'person'         => 'Người',
                 'subtotal'       => 'Tổng phụ',
                 'discount'       => 'Giảm giá',

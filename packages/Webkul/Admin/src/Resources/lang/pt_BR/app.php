@@ -180,48 +180,48 @@ return [
 
                 'empty-placeholders' => [
                     'all' => [
-                        'title'       => 'Nenhuma Atividade foi encontrada',
-                        'description' => 'Nenhuma atividade foi encontrada para isso. Você pode adicionar atividades clicando no botão no painel à esquerda.',
+                        'title'       => 'Nenhuma atividade encontrada',
+                        'description' => 'Nenhuma atividade foi encontrada para este item. Você pode adicionar atividades clicando no botão Atividade no painel à esquerda.',
                     ],
 
                     'planned' => [
-                        'title'       => 'Nenhuma Atividade Planejada foi encontrada',
-                        'description' => 'Nenhuma atividade planejada foi encontrada para isso. Você pode adicionar atividades planejadas clicando no botão no painel à esquerda.',
+                        'title'       => 'Nenhuma atividade planejada encontrada',
+                        'description' => 'Nenhuma atividade planejada foi encontrada. Adicione uma clicando no botão Atividade no painel à esquerda.',
                     ],
 
                     'notes' => [
-                        'title'       => 'Nenhuma Nota foi encontrada',
-                        'description' => 'Nenhuma nota encontrada para isso. Você pode adicionar notas clicando no botão no painel à esquerda.',
+                        'title'       => 'Nenhuma nota encontrada',
+                        'description' => 'Nenhuma nota foi encontrada. Adicione notas clicando no botão Nota no painel à esquerda.',
                     ],
 
                     'calls' => [
-                        'title'       => 'Nenhuma Chamada foi encontrada',
-                        'description' => 'Nenhuma chamada foi encontrada para isso. Você pode adicionar chamadas clicando no botão no painel à esquerda.',
+                        'title'       => 'Nenhuma chamada encontrada',
+                        'description' => 'Nenhuma chamada foi encontrada. Adicione chamadas clicando no botão Atividade e selecionando o tipo Chamada.',
                     ],
 
                     'meetings' => [
-                        'title'       => 'Nenhuma Reunião foi encontrada',
-                        'description' => 'Nenhuma reunião foi encontrada para isso. Você pode adicionar reuniões clicando no botão no painel à esquerda.',
+                        'title'       => 'Nenhuma reunião encontrada',
+                        'description' => 'Nenhuma reunião foi encontrada. Adicione reuniões clicando no botão Atividade e selecionando o tipo Reunião.',
                     ],
 
                     'lunches' => [
-                        'title'       => 'Nenhum Almoço foi encontrado',
-                        'description' => 'Nenhum almoço foi encontrado para isso. Você pode adicionar almoços clicando no botão no painel à esquerda.',
+                        'title'       => 'Nenhum almoço encontrado',
+                        'description' => 'Nenhum almoço foi encontrado. Adicione almoços clicando no botão Atividade e selecionando o tipo Almoço.',
                     ],
 
                     'files' => [
-                        'title'       => 'Nenhum Arquivo foi encontrado',
-                        'description' => 'Nenhum arquivo foi encontrado para isso. Você pode adicionar arquivos clicando no botão no painel à esquerda.',
+                        'title'       => 'Nenhum arquivo encontrado',
+                        'description' => 'Nenhum arquivo foi encontrado. Adicione arquivos clicando no botão Arquivo no painel à esquerda.',
                     ],
 
                     'emails' => [
-                        'title'       => 'Nenhum E-mail foi encontrado',
-                        'description' => 'Nenhum e-mail foi encontrado para isso. Você pode adicionar e-mails clicando no botão no painel à esquerda.',
+                        'title'       => 'Nenhum e-mail encontrado',
+                        'description' => 'Nenhum e-mail foi encontrado. Adicione e-mails clicando no botão Correio no painel à esquerda.',
                     ],
 
                     'system' => [
-                        'title'       => 'Nenhum Log de Alteração foi encontrado',
-                        'description' => 'Nenhum log de alteração foi encontrado para isso.',
+                        'title'       => 'Nenhum registro de alteração encontrado',
+                        'description' => 'Nenhum registro de alteração foi encontrado.',
                     ],
                 ],
             ],
@@ -437,7 +437,6 @@ return [
                 'sales-person'   => 'Vendedor',
                 'expired-at'     => 'Expirado em',
                 'created-at'     => 'Criado em',
-                'expired-quotes' => 'Cotação Expirada',
                 'person'         => 'Pessoa',
                 'subtotal'       => 'Subtotal',
                 'discount'       => 'Desconto',

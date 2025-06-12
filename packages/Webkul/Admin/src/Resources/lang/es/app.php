@@ -187,42 +187,42 @@ return [
                 'empty-placeholders' => [
                     'all' => [
                         'title'       => 'No se encontraron actividades',
-                        'description' => 'No se encontraron actividades para esto. Puedes agregar actividades haciendo clic en el botón en el panel lateral.',
+                        'description' => 'No se encontraron actividades para esto. Puedes agregar actividades haciendo clic en el botón Actividad en el panel izquierdo.',
                     ],
 
                     'planned' => [
                         'title'       => 'No se encontraron actividades planificadas',
-                        'description' => 'No se encontraron actividades planificadas para esto. Puedes agregar actividades planificadas haciendo clic en el botón en el panel lateral.',
+                        'description' => 'No se encontraron actividades planificadas para esto. Puedes agregarlas haciendo clic en el botón Actividad en el panel izquierdo.',
                     ],
 
                     'notes' => [
                         'title'       => 'No se encontraron notas',
-                        'description' => 'No se encontraron notas para esto. Puedes agregar notas haciendo clic en el botón en el panel lateral.',
+                        'description' => 'No se encontraron notas para esto. Puedes agregarlas haciendo clic en el botón Nota en el panel izquierdo.',
                     ],
 
                     'calls' => [
                         'title'       => 'No se encontraron llamadas',
-                        'description' => 'No se encontraron llamadas para esto. Puedes agregar llamadas haciendo clic en el botón en el panel lateral.',
+                        'description' => 'No se encontraron llamadas para esto. Puedes agregarlas haciendo clic en el botón Actividad en el panel izquierdo y seleccionando el tipo Llamada.',
                     ],
 
                     'meetings' => [
                         'title'       => 'No se encontraron reuniones',
-                        'description' => 'No se encontraron reuniones para esto. Puedes agregar reuniones haciendo clic en el botón en el panel lateral.',
+                        'description' => 'No se encontraron reuniones para esto. Puedes agregarlas haciendo clic en el botón Actividad en el panel izquierdo y seleccionando el tipo Reunión.',
                     ],
 
                     'lunches' => [
                         'title'       => 'No se encontraron almuerzos',
-                        'description' => 'No se encontraron almuerzos para esto. Puedes agregar almuerzos haciendo clic en el botón en el panel lateral.',
+                        'description' => 'No se encontraron almuerzos para esto. Puedes agregarlos haciendo clic en el botón Actividad en el panel izquierdo y seleccionando el tipo Almuerzo.',
                     ],
 
                     'files' => [
                         'title'       => 'No se encontraron archivos',
-                        'description' => 'No se encontraron archivos para esto. Puedes agregar archivos haciendo clic en el botón en el panel lateral.',
+                        'description' => 'No se encontraron archivos para esto. Puedes agregarlos haciendo clic en el botón Archivo en el panel izquierdo.',
                     ],
 
                     'emails' => [
                         'title'       => 'No se encontraron correos electrónicos',
-                        'description' => 'No se encontraron correos electrónicos para esto. Puedes agregar correos electrónicos haciendo clic en el botón en el panel lateral.',
+                        'description' => 'No se encontraron correos electrónicos para esto. Puedes agregarlos haciendo clic en el botón Correo en el panel izquierdo.',
                     ],
 
                     'system' => [
@@ -443,7 +443,6 @@ return [
                 'sales-person'   => 'Vendedor',
                 'expired-at'     => 'Vence en',
                 'created-at'     => 'Creado en',
-                'expired-quotes' => 'Cotización Expirada',
                 'person'         => 'Persona',
                 'subtotal'       => 'Subtotal',
                 'discount'       => 'Descuento',

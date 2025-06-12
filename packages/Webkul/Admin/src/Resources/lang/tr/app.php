@@ -187,47 +187,47 @@ return [
                 'empty-placeholders' => [
                     'all' => [
                         'title'       => 'Etkinlik Bulunamadı',
-                        'description' => 'Bu etkinlikler bulunamadı. Sol paneldeki butona tıklayarak etkinlik ekleyebilirsiniz.',
+                        'description' => 'Bunun için herhangi bir etkinlik bulunamadı. Sol paneldeki Etkinlik butonuna tıklayarak etkinlik ekleyebilirsiniz.',
                     ],
 
                     'planned' => [
-                        'title'       => 'Planlanan Etkinlik Bulunamadı',
-                        'description' => 'Bu planlanan etkinlikler bulunamadı. Sol paneldeki butona tıklayarak planlanan etkinlik ekleyebilirsiniz.',
+                        'title'       => 'Planlı Etkinlik Bulunamadı',
+                        'description' => 'Herhangi bir planlı etkinlik bulunamadı. Sol paneldeki Etkinlik butonuna tıklayarak planlı etkinlik ekleyebilirsiniz.',
                     ],
 
                     'notes' => [
                         'title'       => 'Not Bulunamadı',
-                        'description' => 'Bu not bulunamadı. Sol paneldeki butona tıklayarak not ekleyebilirsiniz.',
+                        'description' => 'Herhangi bir not bulunamadı. Sol paneldeki Not butonuna tıklayarak not ekleyebilirsiniz.',
                     ],
 
                     'calls' => [
-                        'title'       => 'Arama Bulunamadı',
-                        'description' => 'Bu arama bulunamadı. Sol paneldeki butona tıklayarak arama ekleyebilirsiniz.',
+                        'title'       => 'Çağrı Bulunamadı',
+                        'description' => 'Herhangi bir çağrı bulunamadı. Sol paneldeki Etkinlik butonuna tıklayıp Çağrı türünü seçerek çağrı ekleyebilirsiniz.',
                     ],
 
                     'meetings' => [
                         'title'       => 'Toplantı Bulunamadı',
-                        'description' => 'Bu toplantı bulunamadı. Sol paneldeki butona tıklayarak toplantı ekleyebilirsiniz.',
+                        'description' => 'Herhangi bir toplantı bulunamadı. Sol paneldeki Etkinlik butonuna tıklayıp Toplantı türünü seçerek toplantı ekleyebilirsiniz.',
                     ],
 
                     'lunches' => [
-                        'title'       => 'Öğle Yemeği Bulunamadı',
-                        'description' => 'Bu öğle yemeği bulunamadı. Sol paneldeki butona tıklayarak öğle yemeği ekleyebilirsiniz.',
+                        'title'       => 'Yemek Bulunamadı',
+                        'description' => 'Herhangi bir öğle yemeği bulunamadı. Sol paneldeki Etkinlik butonuna tıklayıp Yemek türünü seçerek öğle yemeği ekleyebilirsiniz.',
                     ],
 
                     'files' => [
                         'title'       => 'Dosya Bulunamadı',
-                        'description' => 'Bu dosya bulunamadı. Sol paneldeki butona tıklayarak dosya ekleyebilirsiniz.',
+                        'description' => 'Herhangi bir dosya bulunamadı. Sol paneldeki Dosya butonuna tıklayarak dosya ekleyebilirsiniz.',
                     ],
 
                     'emails' => [
                         'title'       => 'E-posta Bulunamadı',
-                        'description' => 'Bu e-posta bulunamadı. Sol paneldeki butona tıklayarak e-posta ekleyebilirsiniz.',
+                        'description' => 'Herhangi bir e-posta bulunamadı. Sol paneldeki Posta butonuna tıklayarak e-posta ekleyebilirsiniz.',
                     ],
 
                     'system' => [
-                        'title'       => 'Değişiklik Günlüğü Bulunamadı',
-                        'description' => 'Bu değişiklik günlüğü bulunamadı.',
+                        'title'       => 'Değişiklik Kaydı Bulunamadı',
+                        'description' => 'Bu öğe için herhangi bir değişiklik kaydı bulunamadı.',
                     ],
                 ],
             ],
@@ -443,7 +443,6 @@ return [
                 'sales-person'   => 'Satış Temsilcisi',
                 'expired-at'     => 'Son Kullanma Tarihi',
                 'created-at'     => 'Oluşturulma Tarihi',
-                'expired-quotes' => 'Süresi Dolmuş Teklifler',
                 'person'         => 'Kişi',
                 'subtotal'       => 'Ara Toplam',
                 'discount'       => 'İndirim',
