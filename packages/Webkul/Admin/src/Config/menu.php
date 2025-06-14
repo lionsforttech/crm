@@ -100,25 +100,26 @@ return [
     ],
 
     /**
-     * Contacts [Person].
+     * Contacts.
      */
     [
-        'key'        => 'persons',
+        'key'        => 'contacts',
+        'name'       => 'admin::app.layouts.contacts',
+        'route'      => 'admin.contacts.persons.index',
+        'sort'       => 6,
+        'icon-class' => 'icon-contact',
+    ], [
+        'key'        => 'contacts.persons',
         'name'       => 'admin::app.layouts.persons',
         'route'      => 'admin.contacts.persons.index',
-        'sort'       => 7,
-        'icon-class' => 'icon-contact',
-    ],
-
-    /**
-     * Contacts [Organizations].
-     */
-    [
-        'key'        => 'organizations',
+        'sort'       => 1,
+        'icon-class' => '',
+    ], [
+        'key'        => 'contacts.organizations',
         'name'       => 'admin::app.layouts.organizations',
         'route'      => 'admin.contacts.organizations.index',
-        'sort'       => 8,
-        'icon-class' => 'icon-contact',
+        'sort'       => 2,
+        'icon-class' => '',
     ],
 
     /**
@@ -128,7 +129,7 @@ return [
         'key'        => 'products',
         'name'       => 'admin::app.layouts.products',
         'route'      => 'admin.products.index',
-        'sort'       => 9,
+        'sort'       => 7,
         'icon-class' => 'icon-product',
     ],
 
@@ -139,7 +140,7 @@ return [
         'key'        => 'settings',
         'name'       => 'admin::app.layouts.settings',
         'route'      => 'admin.settings.index',
-        'sort'       => 10,
+        'sort'       => 8,
         'icon-class' => 'icon-setting',
     ], [
         'key'        => 'settings.user',
@@ -291,7 +292,7 @@ return [
         'key'        => 'configuration',
         'name'       => 'admin::app.layouts.configuration',
         'route'      => 'admin.configuration.index',
-        'sort'       => 11,
+        'sort'       => 9,
         'icon-class' => 'icon-configuration',
     ],
 

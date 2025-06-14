@@ -126,48 +126,53 @@ return [
         'name'  => 'admin::app.acl.delete',
         'route' => ['admin.activities.delete', 'admin.activities.mass_delete'],
         'sort'  => 3,
-    ],[
-        'key'   => 'persons',
+    ], [
+        'key'   => 'contacts',
+        'name'  => 'admin::app.acl.contacts',
+        'route' => 'admin.contacts.users.index',
+        'sort'  => 6,
+    ], [
+        'key'   => 'contacts.persons',
         'name'  => 'admin::app.acl.persons',
         'route' => 'admin.contacts.persons.index',
         'sort'  => 1,
     ], [
-        'key'   => 'persons.create',
+        'key'   => 'contacts.persons.create',
         'name'  => 'admin::app.acl.create',
         'route' => ['admin.contacts.persons.create', 'admin.contacts.persons.store'],
         'sort'  => 2,
     ], [
-        'key'   => 'persons.edit',
+        'key'   => 'contacts.persons.edit',
         'name'  => 'admin::app.acl.edit',
         'route' => ['admin.contacts.persons.edit', 'admin.contacts.persons.update'],
         'sort'  => 3,
     ], [
-        'key'   => 'persons.delete',
+        'key'   => 'contacts.persons.delete',
         'name'  => 'admin::app.acl.delete',
         'route' => ['admin.contacts.persons.delete', 'admin.contacts.persons.mass_delete'],
         'sort'  => 4,
     ],  [
-        'key'   => 'persons.view',
+        'key'   => 'contacts.persons.view',
         'name'  => 'admin::app.acl.view',
         'route' => 'admin.contacts.persons.view',
         'sort'  => 5,
     ], [
-        'key'   => 'organizations',
+        'key'   => 'contacts.organizations',
         'name'  => 'admin::app.acl.organizations',
         'route' => 'admin.contacts.organizations.index',
         'sort'  => 2,
     ], [
-        'key'   => 'organizations.create',
+        'key'   => 'contacts.organizations.create',
         'name'  => 'admin::app.acl.create',
         'route' => ['admin.contacts.organizations.create', 'admin.contacts.organizations.store'],
         'sort'  => 1,
     ], [
-        'key'   => 'organizations.edit',
+        'key'   => 'contacts.organizations.edit',
         'name'  => 'admin::app.acl.edit',
         'route' => ['admin.contacts.organizations.edit', 'admin.contacts.organizations.update'],
         'sort'  => 2,
     ], [
-        'key'   => 'organizations.delete',
+        'key'   => 'contacts.organizations.delete',
         'name'  => 'admin::app.acl.delete',
         'route' => ['admin.contacts.organizations.delete', 'admin.contacts.organizations.mass_delete'],
         'sort'  => 3,
