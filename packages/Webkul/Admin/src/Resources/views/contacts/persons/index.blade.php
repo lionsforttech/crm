@@ -21,14 +21,14 @@
                 <div class="flex items-center gap-x-2.5">
                     {!! view_render_event('admin.persons.index.create_button.before') !!}
 
-                    @if (bouncer()->hasPermission('contacts.persons.create'))
+                    {{-- @if (bouncer()->hasPermission('contacts.persons.create')) --}}
                         <a
                             href="{{ route('admin.contacts.persons.create') }}"
                             class="primary-button"
                         >
                             @lang('admin::app.contacts.persons.index.create-btn')
                         </a>
-                    @endif
+                    {{-- @endif --}}
 
                     {!! view_render_event('admin.persons.index.create_button.after') !!}
                 </div>

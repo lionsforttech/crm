@@ -23,7 +23,7 @@
                 <div class="flex items-center gap-x-2.5">
                     {!! view_render_event('admin.organizations.index.create_button.before') !!}
 
-                    @if (bouncer()->hasPermission('contacts.organizations.create'))
+                    {{-- @if (bouncer()->hasPermission('contacts.organizations.create')) --}}
                         <!-- Create button for person -->
                         <a
                             href="{{ route('admin.contacts.organizations.create') }}"
@@ -31,7 +31,7 @@
                         >
                             @lang('admin::app.contacts.organizations.index.create-btn')
                         </a>
-                    @endif
+                    {{-- @endif --}}
 
                     {!! view_render_event('admin.organizations.index.create_button.after') !!}
                 </div>
