@@ -57,25 +57,6 @@
         
                         {!! view_render_event('admin.leads.view.person.job_title.after', ['lead' => $lead]) !!}
                     
-                        {!! view_render_event('admin.leads.view.person.email.before', ['lead' => $lead]) !!}
-        
-                        @foreach ($lead->person->emails as $email)
-                            <div class="flex gap-1">
-                                <a 
-                                    class="text-brandColor"
-                                    href="mailto:{{ $email['value'] }}"
-                                >
-                                    {{ $email['value'] }}
-                                </a>
-        
-                                <span class="text-gray-500 dark:text-gray-300">
-                                    ({{ $email['label'] }})
-                                </span>
-                            </div>
-                        @endforeach
-        
-                        {!! view_render_event('admin.leads.view.person.email.after', ['lead' => $lead]) !!}
-        
                         {!! view_render_event('admin.leads.view.person.contact_numbers.before', ['lead' => $lead]) !!}
                     
                         @foreach ($lead->person->contact_numbers as $contactNumber)

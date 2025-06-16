@@ -47,21 +47,13 @@
                 <!-- Title -->
                 <h3 class="text-lg font-bold dark:text-white">
                     {{ $lead->title }}
-                </h1>
+                </h3>
 
                 {!! view_render_event('admin.leads.view.title.after', ['lead' => $lead]) !!}
 
                 <!-- Activity Actions -->
                 <div class="flex flex-wrap gap-2">
                     {!! view_render_event('admin.leads.view.actions.before', ['lead' => $lead]) !!}
-
-                    @if (bouncer()->hasPermission('mail.compose'))
-                        <!-- Mail Activity Action -->
-                        <x-admin::activities.actions.mail
-                            :entity="$lead"
-                            entity-control-name="lead_id"
-                        />
-                    @endif
 
                     @if (bouncer()->hasPermission('activities.create'))
                         <!-- File Activity Action -->
