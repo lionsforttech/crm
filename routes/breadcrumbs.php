@@ -296,11 +296,6 @@ Breadcrumbs::for('settings.marketing.events', function (BreadcrumbTrail $trail) 
     $trail->push(trans('admin::app.settings.marketing.events.index.title'), route('admin.settings.marketing.events.index'));
 });
 
-Breadcrumbs::for('settings.marketing.campaigns', function (BreadcrumbTrail $trail) {
-    $trail->parent('settings');
-    $trail->push(trans('admin::app.settings.marketing.campaigns.index.title'), route('admin.settings.marketing.campaigns.index'));
-});
-
 // Settings > Workflows
 Breadcrumbs::for('settings.workflows', function (BreadcrumbTrail $trail) {
     $trail->parent('settings');
