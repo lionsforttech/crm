@@ -35,60 +35,6 @@ return [
     ],
 
     /**
-     * Emails.
-     */
-    [
-        'key'        => 'mail',
-        'name'       => 'admin::app.layouts.mail.title',
-        'route'      => 'admin.mail.index',
-        'params'     => ['route' => 'inbox'],
-        'sort'       => 4,
-        'icon-class' => 'icon-mail',
-    ], [
-        'key'        => 'mail.inbox',
-        'name'       => 'admin::app.layouts.mail.inbox',
-        'route'      => 'admin.mail.index',
-        'params'     => ['route' => 'inbox'],
-        'sort'       => 2,
-        'icon-class' => '',
-    ], [
-        'key'        => 'mail.draft',
-        'name'       => 'admin::app.layouts.mail.draft',
-        'route'      => 'admin.mail.index',
-        'params'     => ['route' => 'draft'],
-        'sort'       => 3,
-        'icon-class' => '',
-    ], [
-        'key'        => 'mail.outbox',
-        'name'       => 'admin::app.layouts.mail.outbox',
-        'route'      => 'admin.mail.index',
-        'params'     => ['route' => 'outbox'],
-        'sort'       => 4,
-        'icon-class' => '',
-    ], [
-        'key'        => 'mail.sent',
-        'name'       => 'admin::app.layouts.mail.sent',
-        'route'      => 'admin.mail.index',
-        'params'     => ['route' => 'sent'],
-        'sort'       => 4,
-        'icon-class' => '',
-    ], [
-        'key'        => 'mail.trash',
-        'name'       => 'admin::app.layouts.mail.trash',
-        'route'      => 'admin.mail.index',
-        'params'     => ['route' => 'trash'],
-        'sort'       => 5,
-        'icon-class' => '',
-    ],
-    // , [
-    //     'key'        => 'mail.setting',
-    //     'name'       => 'admin::app.layouts.mail.setting',
-    //     'route'      => 'admin.mail.index',
-    //     'params'     => ['route' => 'setting'],
-    //     'sort'       => 5,
-    // ]
-
-    /**
      * Activities.
      */
     [
@@ -227,26 +173,12 @@ return [
         'sort'       => 1,
         'icon-class' => 'icon-attribute',
     ], [
-        'key'        => 'settings.automation.email_templates',
-        'name'       => 'admin::app.layouts.email-templates',
-        'info'       => 'admin::app.layouts.email-templates-info',
-        'route'      => 'admin.settings.email_templates.index',
-        'sort'       => 2,
-        'icon-class' => 'icon-settings-mail',
-    ], [
         'key'        => 'settings.automation.events',
         'name'       => 'admin::app.layouts.events',
         'info'       => 'admin::app.layouts.events-info',
         'route'      => 'admin.settings.marketing.events.index',
         'sort'       => 2,
         'icon-class' => 'icon-calendar',
-    ], [
-        'key'        => 'settings.automation.campaigns',
-        'name'       => 'admin::app.layouts.campaigns',
-        'info'       => 'admin::app.layouts.campaigns-info',
-        'route'      => 'admin.settings.marketing.campaigns.index',
-        'sort'       => 2,
-        'icon-class' => 'icon-note',
     ], [
         'key'        => 'settings.automation.webhooks',
         'name'       => 'admin::app.layouts.webhooks',

@@ -57,56 +57,6 @@ return [
         'route' => ['admin.quotes.delete', 'admin.quotes.mass_delete'],
         'sort'  => 4,
     ], [
-        'key'   => 'mail',
-        'name'  => 'admin::app.acl.mail',
-        'route' => 'admin.mail.index',
-        'sort'  => 4,
-    ], [
-        'key'   => 'mail.inbox',
-        'name'  => 'admin::app.acl.inbox',
-        'route' => 'admin.mail.index',
-        'sort'  => 1,
-    ], [
-        'key'   => 'mail.draft',
-        'name'  => 'admin::app.acl.draft',
-        'route' => 'admin.mail.index',
-        'sort'  => 2,
-    ], [
-        'key'   => 'mail.outbox',
-        'name'  => 'admin::app.acl.outbox',
-        'route' => 'admin.mail.index',
-        'sort'  => 3,
-    ], [
-        'key'   => 'mail.sent',
-        'name'  => 'admin::app.acl.sent',
-        'route' => 'admin.mail.index',
-        'sort'  => 4,
-    ], [
-        'key'   => 'mail.trash',
-        'name'  => 'admin::app.acl.trash',
-        'route' => 'admin.mail.index',
-        'sort'  => 5,
-    ], [
-        'key'   => 'mail.compose',
-        'name'  => 'admin::app.acl.create',
-        'route' => ['admin.mail.store'],
-        'sort'  => 6,
-    ], [
-        'key'   => 'mail.view',
-        'name'  => 'admin::app.acl.view',
-        'route' => 'admin.mail.view',
-        'sort'  => 7,
-    ], [
-        'key'   => 'mail.edit',
-        'name'  => 'admin::app.acl.edit',
-        'route' => 'admin.mail.update',
-        'sort'  => 8,
-    ], [
-        'key'   => 'mail.delete',
-        'name'  => 'admin::app.acl.delete',
-        'route' => ['admin.mail.delete', 'admin.mail.mass_delete'],
-        'sort'  => 9,
-    ], [
         'key'   => 'activities',
         'name'  => 'admin::app.acl.activities',
         'route' => 'admin.activities.index',
@@ -362,26 +312,6 @@ return [
         'route' => 'admin.settings.attributes.delete',
         'sort'  => 3,
     ], [
-        'key'   => 'settings.automation.email_templates',
-        'name'  => 'admin::app.acl.email-templates',
-        'route' => 'admin.settings.email_templates.index',
-        'sort'  => 7,
-    ], [
-        'key'   => 'settings.automation.email_templates.create',
-        'name'  => 'admin::app.acl.create',
-        'route' => ['admin.settings.email_templates.create', 'admin.settings.email_templates.store'],
-        'sort'  => 1,
-    ], [
-        'key'   => 'settings.automation.email_templates.edit',
-        'name'  => 'admin::app.acl.edit',
-        'route' => ['admin.settings.email_templates.edit', 'admin.settings.email_templates.update'],
-        'sort'  => 2,
-    ], [
-        'key'   => 'settings.automation.email_templates.delete',
-        'name'  => 'admin::app.acl.delete',
-        'route' => 'admin.settings.email_templates.delete',
-        'sort'  => 3,
-    ], [
         'key'   => 'settings.automation.workflows',
         'name'  => 'admin::app.acl.workflows',
         'route' => 'admin.settings.workflows.index',
@@ -420,26 +350,6 @@ return [
         'key'   => 'settings.automation.events.delete',
         'name'  => 'admin::app.acl.delete',
         'route' => ['admin.settings.marketing.events.delete', 'admin.settings.marketing.events.mass_delete'],
-        'sort'  => 3,
-    ], [
-        'key'   => 'settings.automation.campaigns',
-        'name'  => 'admin::app.acl.campaigns',
-        'route' => 'admin.settings.marketing.campaigns.index',
-        'sort'  => 2,
-    ], [
-        'key'   => 'settings.automation.campaigns.create',
-        'name'  => 'admin::app.acl.create',
-        'route' => ['admin.settings.marketing.campaigns.create', 'admin.settings.marketing.campaigns.store'],
-        'sort'  => 1,
-    ], [
-        'key'   => 'settings.automation.campaigns.edit',
-        'name'  => 'admin::app.acl.edit',
-        'route' => ['admin.settings.marketing.campaigns.edit', 'admin.settings.marketing.campaigns.update'],
-        'sort'  => 2,
-    ], [
-        'key'   => 'settings.automation.campaigns.delete',
-        'name'  => 'admin::app.acl.delete',
-        'route' => ['admin.settings.marketing.campaigns.delete', 'admin.settings.marketing.campaigns.mass_delete'],
         'sort'  => 3,
     ], [
         'key'   => 'settings.automation.webhooks',
