@@ -204,40 +204,6 @@
 
                     {!! view_render_event('admin.contacts.quotes.edit.address_information.before', ['quote' => $quote]) !!}
 
-                    <!-- Address information -->
-                    <div
-                        id="address-info"
-                        class="flex flex-col gap-4"
-                    >
-                        <div class="flex flex-col gap-1">
-                            <p class="text-base font-semibold text-gray-800 dark:text-white">
-                                @lang('admin::app.quotes.create.address-info')
-                            </p>
-
-                            <p class="text-sm text-gray-600 dark:text-white">
-                                @lang('admin::app.quotes.create.address-info-info')
-                            </p>
-                        </div>
-
-                        <div class="w-1/2 max-md:w-full">
-                            <x-admin::attributes
-                                :custom-attributes="app('Webkul\Attribute\Repositories\AttributeRepository')->findWhere([
-                                    'entity_type' => 'quotes',
-                                    ['code', 'IN', ['billing_address', 'shipping_address']],
-                                ])"
-                                :custom-validations="[
-                                    'billing_address' => [
-                                        'max:100',
-                                    ],
-                                    'shipping_address' => [
-                                        'max:100',
-                                    ],
-                                ]"
-                                :entity="$quote"
-                            />
-                        </div>
-                    </div>
-
                     {!! view_render_event('admin.contacts.quotes.edit.address_information.after', ['quote' => $quote]) !!}
 
                     {!! view_render_event('admin.contacts.quotes.edit.quote_information.before', ['quote' => $quote]) !!}

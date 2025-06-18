@@ -57,6 +57,7 @@
 
             .page-content {
                 padding: 12px;
+                padding-bottom: 90px; /* add enough space for the footer */
             }
 
             .page-header {
@@ -64,7 +65,7 @@
                 text-align: center;
                 font-size: 24px;
                 text-transform: uppercase;
-                color: #000DBB;
+                color: #000000;
                 padding: 24px 0;
                 margin: 0;
             }
@@ -102,8 +103,8 @@
             }
             
             table thead th {
-                background-color: #E9EFFC;
-                color: #000DBB;
+                background-color: #00000007;
+                color: #000000;
                 padding: 6px 18px;
                 text-align: left;
             }
@@ -133,7 +134,7 @@
                 width: 250px;
                 padding-top: 5px;
                 padding-bottom: 5px;
-                background-color: #E9EFFC;
+                background-color: #00000007;
                 white-space: nowrap;
             }
 
@@ -156,17 +157,30 @@
             .summary table td:nth-child(3) {
                 text-align: right;
             }
+
+            .footer-company-info {
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                padding:  20px;
+                width: 100%;
+                font-size: 10px 10px;
+                color: #555;
+                border-top: 1px solid #E9EFFC;
+            }
+
+            .page {
+                position: relative;
+                min-height: 1000px; /* adjust as needed for your page size */
+            }
         </style>
     </head>
     <body dir="{{ $locale }}">
         <div class="page">
             <!-- Header -->
-            <div class="page-header" style="padding: 26px;">
-                <h3 align="left" style="color: #222;">Lions Fort</h3>
-                <div align="left">
-                    <p style="font-size: 10px; color: #555;">Office No. 103, Second Floor, Talary Bayan Building, Opposite of Dentist Hospital,</p>
-                    <p style="font-size: 10px; color: #555;">Muzafarai Street,</p>
-                    <p style="font-size: 10px; color: #555;">Erbil</p>
+            <div class="page-header" style="padding: 12px;">
+                <div class="container">
+                    <img src="{{ public_path('admin/build/assets/logo.png') }}" alt="Logo" style="max-height: 100px;">
                 </div>
             </div>
 
@@ -194,6 +208,7 @@
                                     {{ $quote->person->name }}
                                 </span>
                             </td>
+                            
                         </tr>
 
                         <tr>
@@ -229,15 +244,17 @@
                                 </span>
                             </td>
 
-                            <td style="width: 50%; padding: 2px 18px;border:none;">
+                            {{-- <td style="width: 50%; padding: 2px 18px;border:none;">
                                 <b>
-                                    @lang('admin::app.quotes.index.pdf.sales-person'):
+                                    @lang('admin::app.leads.common.contact.organization'):
                                 </b>
 
                                 <span>
-                                    {{ $quote->user->name }}
+                                    {{ $quote->attribute->organization ?? '-' }}
                                 </span>
-                            </td>
+                            </td> --}}
+                            
+
                         </tr>
 
                         <tr>
@@ -250,60 +267,11 @@
                                     {{ core()->formatDate($quote->expired_at, 'd-m-Y') }}
                                 </span>
                             </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <!-- Billing & Shipping Address -->
-                <table class="{{ $locale }}">
-                    <thead>
-                        <tr>
-                            @if ($quote->billing_address)
-                                <th style="width: 50%;">
-                                    <b>
-                                        @lang('admin::app.quotes.index.pdf.billing-address')
-                                    </b>
-                                </th>
-                            @endif
-
-                            @if ($quote->shipping_address)
-                                <th style="width: 50%">
-                                    <b>
-                                        @lang('admin::app.quotes.index.pdf.shipping-address')
-                                    </b>
-                                </th>
-                            @endif
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            @if ($quote->billing_address)
-                                <td style="width: 50%">
-                                    <div>{{ $quote->billing_address['address'] ?? '' }}</div>
-
-                                    <div>{{ $quote->billing_address['postcode'] ?? '' . ' ' .$quote->billing_address['city'] ?? '' }} </div>
-
-                                    <div>{{ $quote->billing_address['state'] ?? '' }}</div>
-
-                                    <div>{{ core()->country_name($quote->billing_address['country'] ?? '') }}</div>
-                                </td>
-                            @endif
                             
-                            @if ($quote->shipping_address)
-                                <td style="width: 50%">
-                                    <div>{{ $quote->shipping_address['address'] ?? ''}}</div>
-
-                                    <div>{{ $quote->shipping_address['postcode'] ?? '' . ' ' .$quote->shipping_address['city'] ?? '' }} </div>
-
-                                    <div>{{ $quote->shipping_address['state'] ?? '' }}</div>
-
-                                    <div>{{ core()->country_name($quote->shipping_address['country'] ?? '') }}</div>
-                                </td>
-                            @endif
                         </tr>
+                        
                     </tbody>
-                </table>
+                </table>                
 
                 <!-- Items -->
                 <div class="items">
@@ -407,6 +375,11 @@
                     </table>
                 </div>
             </div>
+        </div>
+        <div class="footer-company-info">
+            <div><b>Company Address:</b> Office No. 103, Second Floor, Talary Bayan Building, Opposite of Dentist Hospital, Muzafarai Street, Erbil, Iraq</div>
+            <div><b>Phone:</b> +964 750 316 32 30 &nbsp; | &nbsp; +964 777 938 00 93 </div>
+            <div><b>Website:</b> <a href="https://www.lionsfortco.com" style="color:#555;text-decoration:none;">www.lionsfortco.com</a></div>
         </div>
     </body>
 </html>
